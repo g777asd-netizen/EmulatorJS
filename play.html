@@ -13,15 +13,18 @@
         EJS_player = '#game';
         EJS_core = 'psx';
         
-        // 1. استخدام ملفاتك أنت (بما إن الصفحة دي عندك، هتشتغل 100%)
-        EJS_pathtodata = 'https://g777asd-netizen.github.io/EmulatorJS/data/';
+        // 1. (التعديل المهم) سحب ملفات الماتور من السيرفر الرسمي الجاهز
+        // لاحظ: الصفحة لسه بتاعتك، بس الماتور مستلفينه عشان يشتغل
+        EJS_pathtodata = 'https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/';
         
-        // 2. رابط لعبة صغيرة جداً للتجربة (Magic Floor)
+        // 2. رابط لعبة خفيفة جداً (Magic Floor) للتأكد
         EJS_gameUrl = 'https://raw.githubusercontent.com/asia-se/psx-homebrew/master/Magic_Floor/Magic_Floor.bin';
         
-        // 3. رابط البيوس من عندك
-        EJS_biosUrl = 'https://g777asd-netizen.github.io/EmulatorJS/data/bios/scph1001.bin';
+        // 3. البيوس
+        EJS_biosUrl = 'https://raw.githubusercontent.com/EmulatorJS/EmulatorJS/main/data/bios/scph1001.bin';
     </script>
-    <script src="https://g777asd-netizen.github.io/EmulatorJS/data/loader.js"></script>
+    
+    <!-- تشغيل الماتور -->
+    <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/loader.js"></script>
 </body>
 </html>
