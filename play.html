@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PS1 Game</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background-color: #000; overflow: hidden; }
+        #game { width: 100%; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+    <script>
+        EJS_player = '#game';
+        EJS_core = 'psx';
+        
+        // 1. استخدام ملفاتك أنت (بما إن الصفحة دي عندك، هتشتغل 100%)
+        EJS_pathtodata = 'https://g777asd-netizen.github.io/EmulatorJS/data/';
+        
+        // 2. رابط لعبة صغيرة جداً للتجربة (Magic Floor)
+        EJS_gameUrl = 'https://raw.githubusercontent.com/asia-se/psx-homebrew/master/Magic_Floor/Magic_Floor.bin';
+        
+        // 3. رابط البيوس من عندك
+        EJS_biosUrl = 'https://g777asd-netizen.github.io/EmulatorJS/data/bios/scph1001.bin';
+    </script>
+    <script src="https://g777asd-netizen.github.io/EmulatorJS/data/loader.js"></script>
+</body>
+</html>
