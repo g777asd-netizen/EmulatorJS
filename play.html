@@ -13,18 +13,18 @@
         EJS_player = '#game';
         EJS_core = 'psx';
         
-        // 1. (التغيير الجذري) استخدام السيرفر الرسمي المستقر
-        // ده أسرع وأضمن سيرفر في العالم للمحاكي ده
-        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+        // 1. (الحل الجذري) استخدام UNPKG
+        // الرابط ده بيجيب "النسخة المجهزة" مش كود المصدر
+        EJS_pathtodata = 'https://unpkg.com/emulatorjs@latest/data/';
         
-        // 2. رابط لعبة Magic Floor (صغيرة جداً للتجربة)
+        // 2. رابط لعبة خفيفة جداً (Magic Floor)
         EJS_gameUrl = 'https://raw.githubusercontent.com/asia-se/psx-homebrew/master/Magic_Floor/Magic_Floor.bin';
         
-        // 3. البيوس (من مصدر خارجي مضمون)
+        // 3. البيوس (من مصدر خارجي)
         EJS_biosUrl = 'https://raw.githubusercontent.com/Abdurazaaqmohammed/EmulatorJS/main/data/bios/scph1001.bin';
     </script>
     
-    <!-- تشغيل المحرك من السيرفر الرسمي -->
-    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+    <!-- تشغيل المحرك من UNPKG -->
+    <script src="https://unpkg.com/emulatorjs@latest/data/loader.js"></script>
 </body>
 </html>
