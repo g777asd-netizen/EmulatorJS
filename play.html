@@ -3,8 +3,8 @@
 <head>
     <title>PS1 Game</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; background-color: #000; overflow: hidden; }
-        #game { width: 100%; height: 100vh; }
+        body, html { margin: 0; padding: 0; height: 100%; background-color: #000; }
+        #game { width: 100%; height: 100%; }
     </style>
 </head>
 <body>
@@ -13,18 +13,18 @@
         EJS_player = '#game';
         EJS_core = 'psx';
         
-        // 1. (التعديل المهم) سحب ملفات الماتور من السيرفر الرسمي الجاهز
-        // لاحظ: الصفحة لسه بتاعتك، بس الماتور مستلفينه عشان يشتغل
-        EJS_pathtodata = 'https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/';
+        // 1. (التغيير الجذري) استخدام السيرفر الرسمي المستقر
+        // ده أسرع وأضمن سيرفر في العالم للمحاكي ده
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
         
-        // 2. رابط لعبة خفيفة جداً (Magic Floor) للتأكد
+        // 2. رابط لعبة Magic Floor (صغيرة جداً للتجربة)
         EJS_gameUrl = 'https://raw.githubusercontent.com/asia-se/psx-homebrew/master/Magic_Floor/Magic_Floor.bin';
         
-        // 3. البيوس
-        EJS_biosUrl = 'https://raw.githubusercontent.com/EmulatorJS/EmulatorJS/main/data/bios/scph1001.bin';
+        // 3. البيوس (من مصدر خارجي مضمون)
+        EJS_biosUrl = 'https://raw.githubusercontent.com/Abdurazaaqmohammed/EmulatorJS/main/data/bios/scph1001.bin';
     </script>
     
-    <!-- تشغيل الماتور -->
-    <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/loader.js"></script>
+    <!-- تشغيل المحرك من السيرفر الرسمي -->
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 </body>
 </html>
